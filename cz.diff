@@ -1,0 +1,48 @@
+--- cz.orig	2016-06-23 21:30:04.646742027 +0200
++++ cz	2016-06-23 23:29:52.507952147 +0200
+@@ -145,6 +145,45 @@
+     key <AD08> { [iacute,      Iacute      ] };
+     key <AD09> { [oacute,      Oacute      ] };
+     key <AD10> { [odiaeresis,  Odiaeresis  ] };
++
++
++    // =========================================================
++    // ZACATEK MEHO ROZSIRENI UCW KLAVESNICE
++    // Vsechny popisky vzhledem k anglicke klavesnici!
++
++    // ; => dvojite uvozovky dole ceske
++    key <AC10> { [ doublelowquotemark ] };
++    // " => dvojite uvozovky nahore ceske
++    key <AC11> { [ leftdoublequotemark ] };
++    // space => nedelitelna mezera, shift+space => kratka mezera
++    key <SPCE> { [ nobreakspace, thinspace ] };
++    // . => trojtecka (vypustka)
++    key <AB09> { [ ellipsis ] };
++    // 1 => znak odstavce, shift+1 => trademark
++    key <AE01> { [ section, trademark ] };
++    // 2 => registrovana znacka, shift+2 => copyright
++    key <AE02> { [ registered, copyright ] };
++    // 3 => PI
++    key <AE03> { [ Greek_pi ] };
++    // 4 => euro
++    key <AE04> { [ EuroSign ] };
++    // 8 => znak nekonecno
++    key <AE08> { [ infinity ] };
++    // = => nerovna se, + => plus minus
++    key <AE12> { [ notequal, plusminus ] };
++    // - => kratka pomlcka (ceska "pulctvercikova"), _ => dlouha
++    key <AE11> { [ endash, emdash ] };
++    // , => jednoduche uvozovky dole
++    key <AB08> { [ singlewquotemark ] };
++    // . => jednoduche uvozovky nahore
++    key <AB09> { [ leftsinglequotemark ] };
++    // [ => bocni uvozovky dvojite leve, { => jednoduche leve
++    key <AD11> { [ guillemotleft, U2039 ] }; //anglequoleft
++    // ] => bocni uvozovky dvojite prave, } => jednoduche prave
++    key <AD12> { [ guillemotright, U203A ] }; //anglequoright
++
++    // KONEC MEHO ROZSIRENI
++    // =========================================================
+ };
+ 
+ partial alphanumeric_keys
