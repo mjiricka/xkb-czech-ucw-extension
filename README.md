@@ -19,13 +19,20 @@ Zde jsou všechny přidané znaky, jejich mapování je popsáno v komentáříc
 ## Instalace
 
 
+### Záloha souboru s českými layouty
+
+Protože budeme rozšiřovat systémový soubor, je vhodné si ten původní zazálohovat,
+např. takto:
+
+    sudo cp /usr/share/X11/xkb/symbols/cz /usr/share/X11/xkb/symbols/cz_backup
+
 ### Rozšíření xkb layoutu
 
-Buď zkopírovat celý soubor:
+Buď lze zkopírovat celý soubor:
 
     sudo cp cz /usr/share/X11/xkb/symbols/cz
 
-Nebo aplikovat path:
+nebo aplikovat path:
 
     sudo patch /usr/share/X11/xkb/symbols/cz < cz.diff
 
