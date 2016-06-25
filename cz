@@ -150,11 +150,12 @@ xkb_symbols "ucw" {
     // =========================================================
     // ZACATEK MEHO ROZSIRENI UCW KLAVESNICE
     // Vsechny popisky vzhledem k anglicke klavesnici!
+    // mapovani: /usr/include/xkbcommon/xkbcommon-keysyms.h
 
-    // ; => dvojite uvozovky dole ceske
-    key <AC10> { [ doublelowquotemark ] };
-    // " => dvojite uvozovky nahore ceske
-    key <AC11> { [ leftdoublequotemark ] };
+    // ; => dvojite uvozovky dole ceske, : => jednoduche uvozovky dole
+    key <AC10> { [ doublelowquotemark, singlelowquotemark ] };
+    // ' => dvojite uvozovky nahore ceske, " => jednoduche uvozovky nahore
+    key <AC11> { [ leftdoublequotemark, leftsinglequotemark ] };
     // space => nedelitelna mezera, shift+space => kratka mezera
     key <SPCE> { [ nobreakspace, thinspace ] };
     // . => trojtecka (vypustka)
@@ -173,14 +174,10 @@ xkb_symbols "ucw" {
     key <AE12> { [ notequal, plusminus ] };
     // - => kratka pomlcka (ceska "pulctvercikova"), _ => dlouha
     key <AE11> { [ endash, emdash ] };
-    // , => jednoduche uvozovky dole
-    key <AB08> { [ singlewquotemark ] };
-    // . => jednoduche uvozovky nahore
-    key <AB09> { [ leftsinglequotemark ] };
-    // [ => bocni uvozovky dvojite leve, { => jednoduche leve
-    key <AD11> { [ guillemotleft, U2039 ] }; //anglequoleft
     // ] => bocni uvozovky dvojite prave, } => jednoduche prave
-    key <AD12> { [ guillemotright, U203A ] }; //anglequoright
+    key <AD11> { [ guillemotright, U203A ] }; //anglequoright
+    // [ => bocni uvozovky dvojite leve, { => jednoduche leve
+    key <AD12> { [ guillemotleft, U2039 ] }; //anglequoleft
 
     // KONEC MEHO ROZSIRENI
     // =========================================================
