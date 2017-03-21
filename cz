@@ -170,6 +170,10 @@ xkb_symbols "ucw" {
     key <AE04> { [ EuroSign ] };
     // 8 => znak nekonecno
     key <AE08> { [ infinity ] };
+    // 9 => smajl :-)
+    key <AE09> { [ U1F603 ] };
+    // 0 => smajl :-(
+    key <AE10> { [ U1F623 ] };
     // = => nerovna se, + => plus minus
     key <AE12> { [ notequal, plusminus ] };
     // - => kratka pomlcka (ceska "pulctvercikova"), _ => dlouha

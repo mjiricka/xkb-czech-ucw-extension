@@ -1,6 +1,6 @@
 --- cz.orig	2016-06-23 21:30:04.646742027 +0200
-+++ cz	2016-06-25 11:09:17.412838811 +0200
-@@ -145,6 +145,42 @@
++++ cz	2017-03-21 01:03:00.703710684 +0100
+@@ -145,6 +145,46 @@
      key <AD08> { [iacute,      Iacute      ] };
      key <AD09> { [oacute,      Oacute      ] };
      key <AD10> { [odiaeresis,  Odiaeresis  ] };
@@ -29,6 +29,10 @@
 +    key <AE04> { [ EuroSign ] };
 +    // 8 => znak nekonecno
 +    key <AE08> { [ infinity ] };
++    // 9 => smajl :-)
++    key <AE09> { [ U1F603 ] };
++    // 0 => smajl :-(
++    key <AE10> { [ U1F623 ] };
 +    // = => nerovna se, + => plus minus
 +    key <AE12> { [ notequal, plusminus ] };
 +    // - => kratka pomlcka (ceska "pulctvercikova"), _ => dlouha

@@ -18,7 +18,7 @@ který používám na psaní diakritiky, o další znaky.
 Zde jsou všechny přidané tisknutelné znaky (chybí nedělitelná mezera a krátká mezera),
 jejich mapování je popsáno v komentářích souboru `cz.diff`:
 
-    § ™ ® π € ∞ – — ≠ ± « » ‹ › „ “ , ‘ …
+    § ™ ® π € ∞ – — ≠ ± « » ‹ › „ “ , ‘ … 😃 😣
 
 
 ## Instalace
