@@ -156,10 +156,16 @@ xkb_symbols "ucw" {
     key <AC10> { [ doublelowquotemark, singlelowquotemark ] };
     // ' => dvojite uvozovky nahore ceske, " => jednoduche uvozovky nahore
     key <AC11> { [ leftdoublequotemark, leftsinglequotemark ] };
+    // to uplne vpravo pred enterem v prostredni rade => zaskrtnuto, nesplneno
+    key <AC12> { [ U2713, U2717 ] }; // CHECK MARK, BALLOT X
     // space => nedelitelna mezera, shift+space => kratka mezera
     key <SPCE> { [ nobreakspace, thinspace ] };
     // . => trojtecka (vypustka)
     key <AB09> { [ ellipsis ] };
+    // / => puntik, ? => prazdny puntik
+    key <AB10> { [ U2022, U25E6 ] }; // BULLET, WHITE BULLET
+    // ` => stupen, skoro rovna se
+    key <TLDE> { [ U02DA, U2248 ] }; // RING ABOVE, ALMOST EQUAL TO
     // 1 => znak odstavce, shift+1 => trademark
     key <AE01> { [ section, trademark ] };
     // 2 => registrovana znacka, shift+2 => copyright
@@ -168,12 +174,16 @@ xkb_symbols "ucw" {
     key <AE03> { [ Greek_pi ] };
     // 4 => euro
     key <AE04> { [ EuroSign ] };
+    // 5 => lambda, italic lambda
+    key <AE05> { [ U03BB, U0001D706 ] }; // GREEK SMALL LETTER LAMDA, MATHEMATICAL ITALIC SMALL LAMDA
+    // 6 => negace
+    key <AE06> { [ U00AC ] }; // NOT SIGN
     // 8 => znak nekonecno
     key <AE08> { [ infinity ] };
-    // 9 => smajl :-)
-    key <AE09> { [ U1F603 ] };
-    // 0 => smajl :-(
-    key <AE10> { [ U1F623 ] };
+    // 9 => smajl :-), :-P
+    key <AE09> { [ U1F603, U1F60B ] };
+    // 0 => smajl :-(, :-/
+    key <AE10> { [ U1F623, U1F615 ] };
     // = => nerovna se, + => plus minus
     key <AE12> { [ notequal, plusminus ] };
     // - => kratka pomlcka (ceska "pulctvercikova"), _ => dlouha

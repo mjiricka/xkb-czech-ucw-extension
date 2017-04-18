@@ -1,6 +1,6 @@
 --- cz.orig	2016-06-23 21:30:04.646742027 +0200
-+++ cz	2017-03-21 01:03:00.703710684 +0100
-@@ -145,6 +145,46 @@
++++ cz	2017-04-19 00:55:45.665016684 +0200
+@@ -145,6 +145,56 @@
      key <AD08> { [iacute,      Iacute      ] };
      key <AD09> { [oacute,      Oacute      ] };
      key <AD10> { [odiaeresis,  Odiaeresis  ] };
@@ -15,10 +15,16 @@
 +    key <AC10> { [ doublelowquotemark, singlelowquotemark ] };
 +    // ' => dvojite uvozovky nahore ceske, " => jednoduche uvozovky nahore
 +    key <AC11> { [ leftdoublequotemark, leftsinglequotemark ] };
++    // to uplne vpravo pred enterem v prostredni rade => zaskrtnuto, nesplneno
++    key <AC12> { [ U2713, U2717 ] }; // CHECK MARK, BALLOT X
 +    // space => nedelitelna mezera, shift+space => kratka mezera
 +    key <SPCE> { [ nobreakspace, thinspace ] };
 +    // . => trojtecka (vypustka)
 +    key <AB09> { [ ellipsis ] };
++    // / => puntik, ? => prazdny puntik
++    key <AB10> { [ U2022, U25E6 ] }; // BULLET, WHITE BULLET
++    // ` => stupen, skoro rovna se
++    key <TLDE> { [ U02DA, U2248 ] }; // RING ABOVE, ALMOST EQUAL TO
 +    // 1 => znak odstavce, shift+1 => trademark
 +    key <AE01> { [ section, trademark ] };
 +    // 2 => registrovana znacka, shift+2 => copyright
@@ -27,12 +33,16 @@
 +    key <AE03> { [ Greek_pi ] };
 +    // 4 => euro
 +    key <AE04> { [ EuroSign ] };
++    // 5 => lambda, italic lambda
++    key <AE05> { [ U03BB, U0001D706 ] }; // GREEK SMALL LETTER LAMDA, MATHEMATICAL ITALIC SMALL LAMDA
++    // 6 => negace
++    key <AE06> { [ U00AC ] }; // NOT SIGN
 +    // 8 => znak nekonecno
 +    key <AE08> { [ infinity ] };
-+    // 9 => smajl :-)
-+    key <AE09> { [ U1F603 ] };
-+    // 0 => smajl :-(
-+    key <AE10> { [ U1F623 ] };
++    // 9 => smajl :-), :-P
++    key <AE09> { [ U1F603, U1F60B ] };
++    // 0 => smajl :-(, :-/
++    key <AE10> { [ U1F623, U1F615 ] };
 +    // = => nerovna se, + => plus minus
 +    key <AE12> { [ notequal, plusminus ] };
 +    // - => kratka pomlcka (ceska "pulctvercikova"), _ => dlouha
