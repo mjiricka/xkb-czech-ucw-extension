@@ -184,10 +184,10 @@ xkb_symbols "ucw" {
     key <AE09> { [ U1F603, U1F60B ] };
     // 0 => smajl :-(, :-/
     key <AE10> { [ U1F623, U1F615 ] };
-    // = => nerovna se, + => plus minus
-    key <AE12> { [ notequal, plusminus ] };
     // - => kratka pomlcka (ceska "pulctvercikova"), _ => dlouha
     key <AE11> { [ endash, emdash ] };
+    // = => nerovna se, + => plus minus
+    key <AE12> { [ notequal, plusminus ] };
     // ] => bocni uvozovky dvojite prave, } => jednoduche prave
     key <AD11> { [ guillemotright, U203A ] }; //anglequoright
     // [ => bocni uvozovky dvojite leve, { => jednoduche leve

@@ -1,5 +1,5 @@
 --- cz.orig	2016-06-23 21:30:04.646742027 +0200
-+++ cz	2017-04-19 00:55:45.665016684 +0200
++++ cz	2017-04-19 01:06:59.597570732 +0200
 @@ -145,6 +145,56 @@
      key <AD08> { [iacute,      Iacute      ] };
      key <AD09> { [oacute,      Oacute      ] };
@@ -43,10 +43,10 @@
 +    key <AE09> { [ U1F603, U1F60B ] };
 +    // 0 => smajl :-(, :-/
 +    key <AE10> { [ U1F623, U1F615 ] };
-+    // = => nerovna se, + => plus minus
-+    key <AE12> { [ notequal, plusminus ] };
 +    // - => kratka pomlcka (ceska "pulctvercikova"), _ => dlouha
 +    key <AE11> { [ endash, emdash ] };
++    // = => nerovna se, + => plus minus
++    key <AE12> { [ notequal, plusminus ] };
 +    // ] => bocni uvozovky dvojite prave, } => jednoduche prave
 +    key <AD11> { [ guillemotright, U203A ] }; //anglequoright
 +    // [ => bocni uvozovky dvojite leve, { => jednoduche leve
