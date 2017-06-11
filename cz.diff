@@ -1,6 +1,6 @@
 --- cz.orig	2016-06-23 21:30:04.646742027 +0200
-+++ cz	2017-04-19 01:06:59.597570732 +0200
-@@ -145,6 +145,56 @@
++++ cz	2017-06-11 23:57:04.555619793 +0200
+@@ -145,6 +145,64 @@
      key <AD08> { [iacute,      Iacute      ] };
      key <AD09> { [oacute,      Oacute      ] };
      key <AD10> { [odiaeresis,  Odiaeresis  ] };
@@ -31,12 +31,14 @@
 +    key <AE02> { [ registered, copyright ] };
 +    // 3 => PI
 +    key <AE03> { [ Greek_pi ] };
-+    // 4 => euro
-+    key <AE04> { [ EuroSign ] };
++    // 4 => euro, section sign
++    key <AE04> { [ EuroSign, U00A7 ] };
 +    // 5 => lambda, italic lambda
 +    key <AE05> { [ U03BB, U0001D706 ] }; // GREEK SMALL LETTER LAMDA, MATHEMATICAL ITALIC SMALL LAMDA
 +    // 6 => negace
 +    key <AE06> { [ U00AC ] }; // NOT SIGN
++    // 7 => white heart, black heart, heavy black heart
++    key <AE07> { [ U2661, U2665, U2764 ] };
 +    // 8 => znak nekonecno
 +    key <AE08> { [ infinity ] };
 +    // 9 => smajl :-), :-P
@@ -51,6 +53,12 @@
 +    key <AD11> { [ guillemotright, U203A ] }; //anglequoright
 +    // [ => bocni uvozovky dvojite leve, { => jednoduche leve
 +    key <AD12> { [ guillemotleft, U2039 ] }; //anglequoleft
++
++    // Sipky se chovaji jako PgUp/PgDown a Home/End.
++    key <UP> { [ Prior ] };
++    key <DOWN> { [ Next ] };
++    key <LEFT> { [ Home ] };
++    key <RGHT> { [ End ] };
 +
 +    // KONEC MEHO ROZSIRENI
 +    // =========================================================
