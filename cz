@@ -177,7 +177,7 @@ xkb_symbols "ucw" {
     // 5 => lambda, italic lambda
     key <AE05> { [ U03BB, U0001D706 ] }; // GREEK SMALL LETTER LAMDA, MATHEMATICAL ITALIC SMALL LAMDA
     // 6 => negace
-    key <AE06> { [ U00AC ] }; // NOT SIGN
+    key <AE06> { [ U00AC, U2191 ] }; // NOT SIGN
     // 7 => white heart, black heart, heavy black heart
     key <AE07> { [ U2661, U2665, U2764 ] };
     // 8 => znak nekonecno
