@@ -170,7 +170,7 @@ xkb_symbols "ucw" {
     key <AE01> { [ section, trademark ] };
     // 2 => registrovana znacka, shift+2 => copyright
     key <AE02> { [ registered, copyright ] };
-    // 3 => PI
+    // 3 => PI, Tau
     key <AE03> { [ Greek_pi, Greek_tau ] };
     // 4 => euro, section sign
     key <AE04> { [ EuroSign, U00A7 ] };

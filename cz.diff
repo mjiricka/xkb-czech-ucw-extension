@@ -1,5 +1,5 @@
 --- /usr/share/X11/xkb/symbols/cz.orig	2016-06-23 21:30:04.646742027 +0200
-+++ cz	2018-10-16 23:54:23.247492218 +0200
++++ cz	2018-10-17 00:00:15.574047491 +0200
 @@ -145,6 +145,64 @@
      key <AD08> { [iacute,      Iacute      ] };
      key <AD09> { [oacute,      Oacute      ] };
@@ -29,14 +29,14 @@
 +    key <AE01> { [ section, trademark ] };
 +    // 2 => registrovana znacka, shift+2 => copyright
 +    key <AE02> { [ registered, copyright ] };
-+    // 3 => PI
++    // 3 => PI, Tau
 +    key <AE03> { [ Greek_pi, Greek_tau ] };
 +    // 4 => euro, section sign
 +    key <AE04> { [ EuroSign, U00A7 ] };
 +    // 5 => lambda, italic lambda
 +    key <AE05> { [ U03BB, U0001D706 ] }; // GREEK SMALL LETTER LAMDA, MATHEMATICAL ITALIC SMALL LAMDA
 +    // 6 => negace
-+    key <AE06> { [ U00AC ] }; // NOT SIGN
++    key <AE06> { [ U00AC, U2191 ] }; // NOT SIGN
 +    // 7 => white heart, black heart, heavy black heart
 +    key <AE07> { [ U2661, U2665, U2764 ] };
 +    // 8 => znak nekonecno
