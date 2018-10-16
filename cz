@@ -171,7 +171,7 @@ xkb_symbols "ucw" {
     // 2 => registrovana znacka, shift+2 => copyright
     key <AE02> { [ registered, copyright ] };
     // 3 => PI
-    key <AE03> { [ Greek_pi ] };
+    key <AE03> { [ Greek_pi, Greek_tau ] };
     // 4 => euro, section sign
     key <AE04> { [ EuroSign, U00A7 ] };
     // 5 => lambda, italic lambda
