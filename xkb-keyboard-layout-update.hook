@@ -1,0 +1,19 @@
+# Arch Linux's Pacman hook to update keyboard layout according this package
+# whenever the original file is rewritten by `xkeyboard-config` package.
+# 
+# installation:
+#    1) Copy this file into /etc/pacman.d/hooks/
+#    2) Replace the "<PATH>" with FULL path to the `cz` file in this directory.
+#
+# test:
+#    - Run this command to test the hook: `echo 'xkeyboard-config' | sudo pacman -S -`
+#
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = xkeyboard-config
+[Action]
+Depends = coreutils
+When = PostTransaction
+Exec = /usr/bin/cp <PATH>/cz /usr/share/X11/xkb/symbols/cz
